@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign In - VAQELUNE</title>
+</head>
+<body>
+
+    <h3>SIGN IN below:</h3>
+
+    <form action="{% url 'signin' %}" method="post">
+        {% csrf_token %}
+
+        <label>Username</label>
+        <input type="text" name="username" required>
+
+        <br><br>
+
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <br><br>
+
+        <button type="submit">SIGN IN</button>
+    </form>
+
+</body>
+</html>
